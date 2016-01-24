@@ -1,0 +1,26 @@
+def spam(dividedBy):
+    try:
+        return 42 / dividedBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument')
+        
+
+
+print(spam(2))
+print(spam(12))
+print(spam(0))
+print(spam(1))
+
+print('end')
+
+def spam(dividedBy):
+    return 42 / dividedBy
+   
+try:
+    print(spam(2))
+    print(spam(12))
+    print(spam(0))
+    print(spam(1))
+except ZeroDivisionError:
+    print('Error: Invalid argument')
+        
