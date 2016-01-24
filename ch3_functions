@@ -1,7 +1,7 @@
 def hello():
     print ('Howdy!')
     print ('Howdy duty!')
-    print ('Why, hello there!')
+    print ('Why, hello there sexy!')
 
 hello()
 hello()
@@ -13,3 +13,16 @@ def hello(name):
 
 hello('Alice')
 hello ('Bob')
+
+def plusOne(number):
+    return number + 1
+newNumber=plusOne(5)
+print(newNumber)
+
+print('Who are you? \n I am me, \n who are you?')
+
+print('one potato, two potato, three potato, four')
+print('five potato', 'six potato', 'seven potato', 'more', sep= '-' )
+print('Really?', 'Potato?', 'Is that all you got?')
+
+'jello has ' + str(len('jello')) + ' letters in it'
