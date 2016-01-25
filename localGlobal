@@ -1,0 +1,50 @@
+spam = 42 #global varible
+#global scope is created when the program starts, and destroyed when the program ends.
+#code in the global scope cannot use any local varibles
+
+def eggs():
+    spam = 42 #local varible
+#local scope is created when the function is called, and destroyed when the function returns. 
+#code in one function's local scope cannot use varibles in any other local scope.
+print('been around the world')
+print('just a city dweller')
+
+def spam():
+    eggs = 'spam local'
+    print(eggs)
+
+def bacon():
+    eggs = 'bacon local'
+    print(eggs)
+    spam()
+    print(eggs)
+eggs = 'global'
+bacon()
+print(eggs)
+
+def spam():
+    print(eggs)
+eggs = 42
+spam()
+print(eggs)
+
+def spam():
+    eggs = 99
+    bacon()
+    print(eggs)
+def bacon():
+    ham = 101
+    eggs = 0
+    print(ham)
+def ham():
+
+    print(ham)
+
+bacon()
+spam()
+bacon()
+spam()
+spam()
+bacon()
+spam()
+bacon()
